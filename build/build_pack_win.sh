@@ -46,13 +46,15 @@ make -j2 -s
 ## Package
 cd ..
 rm -r dist
-mkdir dist
+mkdir -p dist/FFmpeg-based-ADX-converter
 
-cp -r scripts/win/* dist
-mkdir dist/SOUND
-mkdir dist/SOUND_raw
-cp ffmpeg/ffmpeg.exe dist/ffmpeg.exe
+cp -r scripts/win/* dist/FFmpeg-based-ADX-converter
+mkdir dist/FFmpeg-based-ADX-converter/SOUND
+mkdir dist/FFmpeg-based-ADX-converter/SOUND_raw
+cp ffmpeg/ffmpeg.exe dist/FFmpeg-based-ADX-converter/ffmpeg.exe
 
-mkdir dist/licenses
-cp ffmpeg/COPYING.LGPLv2.1 dist/licenses/ffmpeg.txt
-cp scripts/LICENSE dist/licenses/scripts.txt
+mkdir dist/FFmpeg-based-ADX-converter/licenses
+cp ffmpeg/COPYING.LGPLv2.1 dist/FFmpeg-based-ADX-converter/licenses/ffmpeg.txt
+cp scripts/LICENSE dist/FFmpeg-based-ADX-converter/licenses/scripts.txt
+
+7z a "./dist/FFmpeg-based-ADX-converter.7z" ./dist/* -mx=9
