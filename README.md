@@ -28,7 +28,7 @@ Decoding | WAV, MP3, FLAC, and ADX
 0. You need a Linux or Windows Subsystem for Linux.
 1. Prepare your environment: https://trac.ffmpeg.org/wiki/CompilationGuide/CrossCompilingForWindows (listed in "Linux Packages")
 2. Clone the repository and run `git submodule init && git submodule update`.
-3. In case Bash says something related to the carette return symbol (`\r`) after clonning the repo on Windows/WSL, run `python3 fix_sh_newline.py`.
+3. In case Bash says something related to the carriage return symbol (`\r`) after clonning the repo on Windows/WSL, run `python3 fix_sh_newline.py`.
 4. Run `bash build/build_pack_win.sh`
 5. `dist` directory should appear with a `7z` file with the program after compilation.
 
