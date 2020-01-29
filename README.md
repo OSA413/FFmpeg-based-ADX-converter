@@ -20,15 +20,16 @@ FFmpeg compiled with the parameters in the build file from the repository suppor
 
    Way   | Formats
 ---------|--------
-Encoding | ADX (ADXv3 without loop pointers), WAV (s16le), and FLAC
+Encoding | ADX (ADXv3 without loop samples), WAV (s16le), and FLAC
 Decoding | WAV, MP3, FLAC, and ADX
 
+You can freely replace the bundled FFmpeg with your own or the one from the official site (ADX encoding works properly only in nightly builds currently).
 
 ## How to compile
 0. You need a Linux or Windows Subsystem for Linux.
 1. Prepare your environment: https://trac.ffmpeg.org/wiki/CompilationGuide/CrossCompilingForWindows (listed in "Linux Packages")
 2. Clone the repository and run `git submodule init && git submodule update`.
-3. In case Bash says something related to the carriage return symbol (`\r`) after clonning the repo on Windows/WSL, run `python3 fix_sh_newline.py`.
+3. In case Bash says something related to the carriage return symbol (`\r`) after cloning the repo on Windows/WSL, run `python3 fix_sh_newline.py`.
 4. Run `bash build/build_pack_win.sh`
 5. `dist` directory should appear with a `7z` file with the program after compilation.
 
@@ -36,7 +37,3 @@ Decoding | WAV, MP3, FLAC, and ADX
 Conversion scripts in this repository are licensed under the MIT license.
 
 FFmpeg compiled with the parameters in the build file from the repository is licensed under the LGPLv2.1+. For more information: https://ffmpeg.org/legal.html
-
-## TODO
-1. Improve scripts to pass the output file name without copying original file.
-2. Add Linux Bash scripts.
