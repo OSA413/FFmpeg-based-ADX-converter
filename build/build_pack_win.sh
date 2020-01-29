@@ -55,7 +55,7 @@ cp ffmpeg/ffmpeg.exe dist/FFmpeg-based-ADX-converter/ffmpeg.exe
 
 mkdir dist/FFmpeg-based-ADX-converter/licenses
 cp ffmpeg/COPYING.LGPLv2.1 dist/FFmpeg-based-ADX-converter/licenses/ffmpeg.txt
-cp scripts/LICENSE dist/FFmpeg-based-ADX-converter/licenses/scripts.txt
+cp LICENSE dist/FFmpeg-based-ADX-converter/licenses/scripts.txt
 
 mkdir dist/FFmpeg-based-ADX-converter/docs/
 cp README.md dist/FFmpeg-based-ADX-converter/docs/README.md
