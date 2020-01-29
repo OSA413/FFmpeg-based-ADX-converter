@@ -57,4 +57,8 @@ mkdir dist/FFmpeg-based-ADX-converter/licenses
 cp ffmpeg/COPYING.LGPLv2.1 dist/FFmpeg-based-ADX-converter/licenses/ffmpeg.txt
 cp scripts/LICENSE dist/FFmpeg-based-ADX-converter/licenses/scripts.txt
 
+mkdir dist/FFmpeg-based-ADX-converter/docs/
+cp README.md dist/FFmpeg-based-ADX-converter/docs/README.md
+pandoc -s -f gfm -t rtf -o dist/FFmpeg-based-ADX-converter/docs/README.rtf README.md
+
 7z a "./dist/FFmpeg-based-ADX-converter.7z" ./dist/* -mx=9
