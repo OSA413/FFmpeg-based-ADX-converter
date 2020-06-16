@@ -15,7 +15,7 @@ Simple ADX converter that uses FFmpeg
 2. Run `convert_to_adx.bat`.
 3. Converted files will appear in the `SOUND` directory keeping original file hierarchy.
 
-You can also use the converter via your terminal. Run one of the scripts and files in `./SOUND(_raw)` will be converted! (. represents current working directory)
+You can also use the converter via your terminal. Run one of the scripts and files in `./SOUND(_raw)` will be converted!
 
 ## Technical information
 FFmpeg compiled with the parameters in the build file from the repository supports:
