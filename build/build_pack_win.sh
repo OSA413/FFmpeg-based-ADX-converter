@@ -4,6 +4,8 @@ cd "$(dirname "$0")"
 ## FFmpeg
 cd ../ffmpeg
 
+echo "Configuring FFmpeg..."
+
 ./configure \
     --arch=x86 \
     --target-os=mingw32 \

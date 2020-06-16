@@ -30,7 +30,7 @@ You can freely replace the bundled FFmpeg with your own or the one from the offi
 1. Prepare your environment: https://trac.ffmpeg.org/wiki/CompilationGuide/CrossCompilingForWindows (listed in "Linux Packages")
 2. Clone the repository and run `git submodule init && git submodule update`.
 3. In case Bash says something related to the carriage return symbol (`\r`) after cloning the repo on Windows/WSL, run `python3 fix_sh_newline.py`.
-4. Run `bash build/build_pack_win.sh`
+4. Run `bash build/build_pack_win.sh`. If you get `yasm/nasm not found or too old`, install yasm or nasm.
 5. `dist` directory should appear with a `7z` file with the program after compilation.
 
 ## License
