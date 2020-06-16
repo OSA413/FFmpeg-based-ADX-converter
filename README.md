@@ -25,7 +25,7 @@ FFmpeg compiled with the parameters in the build file from the repository suppor
 Encoding | ADX (ADXv3 without loop samples), WAV (s16le), and FLAC
 Decoding | WAV, MP3, FLAC, and ADX
 
-You can freely replace the bundled FFmpeg with your own or the one from the official site (ADX encoding works properly only in nightly builds currently).
+You can freely replace the bundled FFmpeg with your own or the one from the official site (version 4.3 or newer).
 
 ## How to compile
 0. You need a Linux or Windows Subsystem for Linux.
