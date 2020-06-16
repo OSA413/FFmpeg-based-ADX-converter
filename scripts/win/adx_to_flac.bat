@@ -1,6 +1,7 @@
 @echo off
 setlocal EnableDelayedExpansion
-call ffmpeg.exe -version && (
+set ffmpeg=%~dp0ffmpeg.exe
+call %ffmpeg% -version && (
 echo.
 
 for /F "delims==" %%f in ('where /F /R SOUND *.adx') DO (
@@ -13,6 +14,6 @@ for /F "delims==" %%f in ('where /F /R SOUND *.adx') DO (
     rmdir !output!
     )
 
-    call ffmpeg.exe -y -loglevel fatal -hide_banner -nostats -i %%f !output!
+    call %ffmpeg% -y -loglevel fatal -hide_banner -nostats -i %%f !output!
 ))
 pause
