@@ -1,6 +1,6 @@
 @echo off
 setlocal EnableDelayedExpansion
-set ffmpeg=%~dp0ffmpeg.exe
+set ffmpeg="%~dp0ffmpeg.exe"
 call %ffmpeg% -version && (
 echo.
 
