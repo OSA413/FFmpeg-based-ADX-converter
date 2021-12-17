@@ -1,13 +1,13 @@
 convert()
 {
 for file in ./$3/**/*.$1; do
-    [ ! -e $file ] && continue
+    [ ! -e "$file" ] && continue
     echo $file
     output="${file%.*}".$2
     output="${output/$3/$4}"
     
-    mkdir -p $(dirname $output)
-    ffmpeg -y -loglevel fatal -hide_banner -nostats -i $file $output
+    mkdir -p $(dirname "$output")
+    ffmpeg -y -loglevel fatal -hide_banner -nostats -i "$file" "$output"
 done
 }
 
